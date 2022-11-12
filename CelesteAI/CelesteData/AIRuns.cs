@@ -116,34 +116,9 @@ namespace CelesteAI.CelesteData
 
         public static void RunChapter2(Sides s)
         {
-            switch (s)
-            {
-                case Sides.A:
-                    break;
-                case Sides.B:
-                    break;
-                case Sides.C:
-                    Thread.Sleep(500);
-                    InputSimulator.Keyboard.KeyDown(VirtualKeyCode.RIGHT);
-                    Thread.Sleep((int)(14 * convert));
-                    Inputs.holdKey(VirtualKeyCode.VK_C, (int)(22 * convert));
-                    Thread.Sleep((int)(6 * convert));
-                    Inputs.holdKey(VirtualKeyCode.VK_X, (int)(15 * convert));
-                    InputSimulator.Keyboard.KeyUp(VirtualKeyCode.RIGHT);
-                    InputSimulator.Keyboard.KeyDown(VirtualKeyCode.VK_Z);
-                    InputSimulator.Keyboard.KeyDown(VirtualKeyCode.LEFT);
-                    Inputs.holdKey(VirtualKeyCode.UP, (int)(100 * convert));
-                    InputSimulator.Keyboard.KeyUp(VirtualKeyCode.LEFT);
-                    InputSimulator.Keyboard.KeyDown(VirtualKeyCode.RIGHT);
-                    InputSimulator.Keyboard.KeyUp(VirtualKeyCode.VK_Z);
-                    Inputs.holdKey(VirtualKeyCode.VK_X, (int)(2 * convert));
-                    Thread.Sleep((int)(45 * convert));
-                    InputSimulator.Keyboard.KeyUp(VirtualKeyCode.RIGHT);
-                    break;
-            }
 
-            }
-            public static void RunChapter3(Sides s)
+        }
+        public static void RunChapter3(Sides s)
         {
 
         }
