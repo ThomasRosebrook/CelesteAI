@@ -12,18 +12,24 @@ namespace CeletseAI
 {
     public class Inputs
     {
+        InputSimulator InputSimulator = new InputSimulator();
         public void holdKey(VirtualKeyCode k, int i)
         {
-
-            InputSimulator InputSimulator = new InputSimulator();
-            //VirtualKeyCode keyCode = VirtualKeyCode.VK_W;
             InputSimulator.Keyboard.KeyDown(k);
             Thread.Sleep(i);
             InputSimulator.Keyboard.KeyUp(k);
         }
+        public void updown(VirtualKeyCode k)
+        {
+            InputSimulator.Keyboard.KeyDown(k);
+            Thread.Sleep(30);
+            InputSimulator.Keyboard.KeyUp(k);
+        }
         [DllImport("user32.dll")]
         public static extern bool SetForegroundWindow(IntPtr hWnd);
-
+        /// <summary>
+        /// brings the game celeste to the first window
+        /// </summary>
         public void openCeleste()
         {
             System.Diagnostics.Process[] p = System.Diagnostics.Process.GetProcessesByName("celeste"); //search for process celeste

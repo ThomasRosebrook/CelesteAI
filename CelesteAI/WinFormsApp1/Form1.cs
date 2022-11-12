@@ -17,10 +17,11 @@ namespace WinFormsApp1
             InitializeComponent();
         }
         public Inputs i = new Inputs();
+        public levels l = new levels();
         private void button1_Click(object sender,EventArgs e)
         {
             i.openCeleste();
-            i.holdKey(VirtualKeyCode.RIGHT, 2000);
+            l.chapter0();
         }
     }
 }

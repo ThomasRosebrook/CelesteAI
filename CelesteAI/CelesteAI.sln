@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CelesteGUI", "CelesteGUI\CelesteGUI.csproj", "{6B1A16FF-BBED-4319-A496-87CAD1557FE9}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CelesteCode", "CelesteCode\CelesteCode.csproj", "{6576B33F-50CC-40AB-99B2-3D0C5B9C8CCB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CeletseAI", "WinFormsApp1\CeletseAI.csproj", "{557AB35A-3812-41A4-BAA7-CE66AC836344}"
 EndProject
 Global
@@ -15,14 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6B1A16FF-BBED-4319-A496-87CAD1557FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B1A16FF-BBED-4319-A496-87CAD1557FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B1A16FF-BBED-4319-A496-87CAD1557FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B1A16FF-BBED-4319-A496-87CAD1557FE9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6576B33F-50CC-40AB-99B2-3D0C5B9C8CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6576B33F-50CC-40AB-99B2-3D0C5B9C8CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6576B33F-50CC-40AB-99B2-3D0C5B9C8CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6576B33F-50CC-40AB-99B2-3D0C5B9C8CCB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{557AB35A-3812-41A4-BAA7-CE66AC836344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{557AB35A-3812-41A4-BAA7-CE66AC836344}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{557AB35A-3812-41A4-BAA7-CE66AC836344}.Release|Any CPU.ActiveCfg = Release|Any CPU
