@@ -43,7 +43,7 @@ namespace CeletseAI
             i.holdKey(VirtualKeyCode.VK_C, (int)(22* convert));
             Thread.Sleep((int)(74 * convert));
             IS.Keyboard.KeyUp(VirtualKeyCode.RIGHT);
-
+            //balls
 
         }
     }
