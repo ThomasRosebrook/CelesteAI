@@ -60,10 +60,11 @@ namespace CelesteAI.CelesteData
         //2 = C Side
         public static void RunChapter1(Sides s)
         {
+
         }
 
         public static void RunChapter2(Sides s)
-        {..
+        {
 
         }
         public static void RunChapter3(Sides s)
@@ -117,7 +118,7 @@ namespace CelesteAI.CelesteData
             RunChapter6(Sides.A);
             RunChapter7(Sides.A);
         }
-        public static void runOneLevel(Chapters Chapter, Sides side)
+        public static void RunAI(Chapters Chapter, Sides side)
         {
             Inputs.openCeleste();
             switch (Chapter)
@@ -145,46 +146,6 @@ namespace CelesteAI.CelesteData
                     break;
                 case Chapters.TheSummit:
                     RunChapter7(side);
-                    break;
-                case Chapters.Epilogue:
-                    RunEpilogue();
-                    break;
-                case Chapters.All:
-                    RunAllChapters();
-                    break;
-                default:
-                    break;
-            }
-        }
-        public static void RunAI(Chapters Chapter)
-        {
-            Inputs.openCeleste();
-
-            switch (Chapter)
-            {
-                case Chapters.Prologue:
-                    RunPrologue();
-                    break;
-                case Chapters.ForsakenCity:
-                    RunChapter1();
-                    break;
-                case Chapters.OldSite:
-                    RunChapter2();
-                    break;
-                case Chapters.CelestialResort:
-                    RunChapter3();
-                    break;
-                case Chapters.GoldenRidge:
-                    RunChapter4();
-                    break;
-                case Chapters.MirrorTemple:
-                    RunChapter5();
-                    break;
-                case Chapters.Reflection:
-                    RunChapter6();
-                    break;
-                case Chapters.TheSummit:
-                    RunChapter7();
                     break;
                 case Chapters.Epilogue:
                     RunEpilogue();

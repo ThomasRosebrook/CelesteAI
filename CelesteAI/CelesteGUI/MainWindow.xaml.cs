@@ -34,7 +34,7 @@ namespace CelesteAI.CelesteGUI
 
         public void RunLevel(object sender, RoutedEventArgs e)
         {
-            AIRuns.RunAI(Chapter.Chapter);
+            AIRuns.RunAI(Chapter.Chapter, Chapter.Side);
         }
     }
 }
