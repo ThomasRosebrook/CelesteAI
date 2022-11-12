@@ -14,6 +14,11 @@
                 <x:Type TypeName="enums:Chapters"/>
             </ObjectDataProvider.MethodParameters>
         </ObjectDataProvider>
+        <ObjectDataProvider x:Key="celesteSides" ObjectType="{x:Type system:Enum}" MethodName="GetValues">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="enums:Sides"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
     </Window.Resources>
 
     <Grid Background="#d8fff7">
@@ -23,23 +28,31 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="3.5*"/>
-            <RowDefinition Height="1.5*"/>
-            <RowDefinition Height="5*"/>
-            <RowDefinition Height="5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Column="0" Grid.Row="0" FontSize="17">
-            Level Selection
+            Chapter Selection
         </TextBlock>
 
         <ComboBox Name="levelSelection" ItemsSource="{Binding Source={StaticResource celesteLevels}}" SelectedItem="{Binding Path=Chapter}" Grid.Column="0" Grid.Row="1" Background="#a1d5ea"/>
 
-        <Button Grid.Column="1" Grid.Row="4" FontSize="50" Click="RunLevel" Background="#a1d5ea">
+        <TextBlock Grid.Column="0" Grid.Row="2" FontSize="17">
+            Side Selection
+        </TextBlock>
+
+        <ComboBox Name="sideSelection" ItemsSource="{Binding Source={StaticResource celesteSides}}" SelectedItem="{Binding Path=Side}" Grid.Column="0" Grid.Row="3" Background="#a1d5ea"/>
+
+        <Button Grid.Column="1" Grid.Row="6" FontSize="50" Click="RunLevel" Background="#a1d5ea">
             Run Level
         </Button>
-        <Image Grid.Column="1" Grid.RowSpan="3" Grid.Row="0" Source="/Celeste_video_game_logo.png" Stretch="Fill"/>
+        <Image Grid.Column="1" Grid.RowSpan="5" Grid.Row="0" Source="/Celeste_video_game_logo.png" Stretch="Fill"/>
     </Grid>
 </Window>
