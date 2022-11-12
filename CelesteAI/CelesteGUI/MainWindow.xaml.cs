@@ -12,17 +12,28 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CelesteAI.CelesteData;
 
-namespace CelesteGUI
+namespace CelesteAI.CelesteGUI
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        public ChapterObject Chapter = new ChapterObject();
+
         public MainWindow()
         {
             InitializeComponent();
+
+            Chapter.Chapter = Chapters.Prologue;
+            this.DataContext = Chapter;
+        }
+
+        public void RunLevel(object sender, RoutedEventArgs e)
+        {
+            AIRuns.RunAI(Chapter.Chapter);
         }
     }
 }
