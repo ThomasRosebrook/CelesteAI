@@ -15,18 +15,26 @@ namespace CelesteAI.CelesteData
 
         public static void holdKey(VirtualKeyCode k, int i)
         {
-
-            
             //VirtualKeyCode keyCode = VirtualKeyCode.VK_W;
             InputSimulator.Keyboard.KeyDown(k);
             Thread.Sleep(i);
             InputSimulator.Keyboard.KeyUp(k);
         }
+
         public static void updown(VirtualKeyCode k)
         {
             InputSimulator.Keyboard.KeyDown(k);
             Thread.Sleep(30);
             InputSimulator.Keyboard.KeyUp(k);
+        }
+
+        public static void holdTwoKeys(VirtualKeyCode k, VirtualKeyCode k2, int i)
+        {
+            InputSimulator.Keyboard.KeyDown(k);
+            InputSimulator.Keyboard.KeyDown(k2);
+            Thread.Sleep(i);
+            InputSimulator.Keyboard.KeyUp(k);
+            InputSimulator.Keyboard.KeyUp(k2);
         }
         [DllImport("user32.dll")]
         public static extern bool SetForegroundWindow(IntPtr hWnd);
