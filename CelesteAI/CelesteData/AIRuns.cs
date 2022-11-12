@@ -11,9 +11,39 @@ namespace CelesteAI.CelesteData
 {
     public static class AIRuns
     {
+
+        const decimal convert = 1000.0m / 60.0m;
+        static InputSimulator InputSimulator = new InputSimulator();
+
         public static void RunPrologue()
         {
-            
+            Thread.Sleep(1000);
+            Inputs.updown(VirtualKeyCode.VK_C);
+            Thread.Sleep(4000);
+            Inputs.updown(VirtualKeyCode.RETURN);
+            Thread.Sleep(50);
+            Inputs.updown(VirtualKeyCode.DOWN);
+            Thread.Sleep(50);
+            Inputs.updown(VirtualKeyCode.VK_C);
+            Thread.Sleep(2000);
+            Inputs.updown(VirtualKeyCode.RETURN);
+            Thread.Sleep(50);
+            Inputs.updown(VirtualKeyCode.DOWN);
+            Thread.Sleep(50);
+            Inputs.updown(VirtualKeyCode.VK_C);
+            Thread.Sleep(2000);
+
+            InputSimulator.Keyboard.KeyDown(VirtualKeyCode.RIGHT);
+            Thread.Sleep((int)(32 * convert));
+            Inputs.holdKey(VirtualKeyCode.VK_C, (int)(35 * convert));
+            Thread.Sleep((int)(23 * convert));
+            Inputs.holdKey(VirtualKeyCode.VK_C, (int)(36 * convert));
+            Thread.Sleep((int)(7 * convert));
+            Inputs.holdKey(VirtualKeyCode.VK_C, (int)(30 * convert));
+            Thread.Sleep((int)(32 * convert));
+            Inputs.holdKey(VirtualKeyCode.VK_C, (int)(22 * convert));
+            Thread.Sleep((int)(74 * convert));
+            InputSimulator.Keyboard.KeyUp(VirtualKeyCode.RIGHT);
         }
         public static void RunChapter1()
         {

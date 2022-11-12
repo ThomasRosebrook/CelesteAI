@@ -11,13 +11,21 @@ namespace CelesteAI.CelesteData
 {
     public static class Inputs
     {
+        static InputSimulator InputSimulator = new InputSimulator();
+
         public static void holdKey(VirtualKeyCode k, int i)
         {
 
-            InputSimulator InputSimulator = new InputSimulator();
+            
             //VirtualKeyCode keyCode = VirtualKeyCode.VK_W;
             InputSimulator.Keyboard.KeyDown(k);
             Thread.Sleep(i);
+            InputSimulator.Keyboard.KeyUp(k);
+        }
+        public static void updown(VirtualKeyCode k)
+        {
+            InputSimulator.Keyboard.KeyDown(k);
+            Thread.Sleep(30);
             InputSimulator.Keyboard.KeyUp(k);
         }
         [DllImport("user32.dll")]
