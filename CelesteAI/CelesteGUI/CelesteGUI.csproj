@@ -9,7 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Celeste_video_game_logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CelesteData\CelesteData.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Celeste_video_game_logo.png" />
   </ItemGroup>
 
 </Project>
