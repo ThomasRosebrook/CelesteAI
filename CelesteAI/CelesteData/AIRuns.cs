@@ -91,6 +91,7 @@ namespace CelesteAI.CelesteData
             Inputs.updown(VirtualKeyCode.DOWN);
             Thread.Sleep(50);
             Inputs.updown(VirtualKeyCode.VK_C);
+            Thread.Sleep(200);
 
             Thread.Sleep((int)(447 * convert));
             Inputs.holdKey(VirtualKeyCode.VK_C, (int)(6 * convert));
@@ -111,7 +112,29 @@ namespace CelesteAI.CelesteData
         //2 = C Side
         public static void RunChapter1(Sides s)
         {
-
+            switch (s)
+            {
+                case Sides.A:
+                    Thread.Sleep(300);
+                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(15 * convert));
+                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(18 * convert));
+                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(13 * convert));
+                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(4 * convert));
+                    Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, (int)(8 * convert));
+                    Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_Z, VirtualKeyCode.VK_C, (int)(13 * convert));
+                    Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, (int)(4 * convert));
+                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, (int)(6 * convert));
+                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(16 * convert));
+                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(20 * convert));
+                    Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, (int)(4 * convert));
+                    Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_X, VirtualKeyCode.VK_C, (int)(11 * convert));
+                    Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, (int)(2 * convert));
+                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(30 * convert));
+                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(9 * convert));
+                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(27 * convert));
+                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(41 * convert));
+                    break;
+            }
         }
 
         public static void RunChapter2(Sides s)
