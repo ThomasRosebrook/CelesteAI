@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="InputSimulator" Version="1.0.4" />
+    <PackageReference Include="InputSimulatorPlus" Version="1.0.7" />
   </ItemGroup>
 
 </Project>

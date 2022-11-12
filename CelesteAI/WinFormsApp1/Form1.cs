@@ -19,11 +19,8 @@ namespace WinFormsApp1
         public Inputs i = new Inputs();
         private void button1_Click(object sender,EventArgs e)
         {
-            Thread.Sleep(2000);
-            for(int h = 0; h <= 100; h++)
-            {
-                i.holdKey(VirtualKeyCode.VK_D, 1000);
-            }
+            i.openCeleste();
+            i.holdKey(VirtualKeyCode.RIGHT, 2000);
         }
     }
 }
