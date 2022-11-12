@@ -53,6 +53,45 @@ namespace CelesteAI.CelesteData
         }
 
         /// <summary>
+        /// Holds down three given keys for a specified amount of time
+        /// </summary>
+        /// <param name="k">The first key to press down</param>
+        /// <param name="k2">The second key to press down</param>
+        /// <param name="k3">The third key to press down</param>
+        /// <param name="i">The amount of time to press the keys down for</param>
+        public static void holdThreeKeys(VirtualKeyCode k, VirtualKeyCode k2, VirtualKeyCode k3, int i)
+        {
+            InputSimulator.Keyboard.KeyDown(k);
+            InputSimulator.Keyboard.KeyDown(k2);
+            InputSimulator.Keyboard.KeyDown(k3);
+            Thread.Sleep(i);
+            InputSimulator.Keyboard.KeyUp(k);
+            InputSimulator.Keyboard.KeyUp(k2);
+            InputSimulator.Keyboard.KeyUp(k3);
+        }
+
+        /// <summary>
+        /// Holds down four given keys for a specified amount of time
+        /// </summary>
+        /// <param name="k">The first key to press down</param>
+        /// <param name="k2">The second key to press down</param>
+        /// <param name="k3">The third key to press down</param>
+        /// <param name="k4">The fourth key to press down</param>
+        /// <param name="i">The amount of time to press the keys down for</param>
+        public static void holdFourKeys(VirtualKeyCode k, VirtualKeyCode k2, VirtualKeyCode k3, VirtualKeyCode k4, int i)
+        {
+            InputSimulator.Keyboard.KeyDown(k);
+            InputSimulator.Keyboard.KeyDown(k2);
+            InputSimulator.Keyboard.KeyDown(k3);
+            InputSimulator.Keyboard.KeyDown(k4);
+            Thread.Sleep(i);
+            InputSimulator.Keyboard.KeyUp(k);
+            InputSimulator.Keyboard.KeyUp(k2);
+            InputSimulator.Keyboard.KeyUp(k3);
+            InputSimulator.Keyboard.KeyUp(k4);
+        }
+
+        /// <summary>
         /// Resets the Celeste room
         /// </summary>
         public static void ResetRoom ()
