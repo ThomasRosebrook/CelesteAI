@@ -51,6 +51,20 @@ namespace CelesteAI.CelesteData
             InputSimulator.Keyboard.KeyUp(k);
             InputSimulator.Keyboard.KeyUp(k2);
         }
+
+        /// <summary>
+        /// Resets the Celeste room
+        /// </summary>
+        public static void ResetRoom ()
+        {
+            Inputs.updown(VirtualKeyCode.RETURN);
+            Thread.Sleep(50);
+            Inputs.updown(VirtualKeyCode.DOWN);
+            Thread.Sleep(50);
+            Inputs.updown(VirtualKeyCode.VK_C);
+            Thread.Sleep(2000);
+        }
+
         [DllImport("user32.dll")]
         public static extern bool SetForegroundWindow(IntPtr hWnd);
 

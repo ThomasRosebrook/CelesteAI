@@ -27,15 +27,9 @@ namespace CelesteAI.CelesteData
             Thread.Sleep(50);
             Inputs.updown(VirtualKeyCode.VK_C);
             Thread.Sleep(2500);
-            /*
-            //Reset Room
-            Inputs.updown(VirtualKeyCode.RETURN);
-            Thread.Sleep(50);
-            Inputs.updown(VirtualKeyCode.DOWN);
-            Thread.Sleep(50);
-            Inputs.updown(VirtualKeyCode.VK_C);
-            Thread.Sleep(2500);
-            */
+
+            Inputs.ResetRoom();
+
             //Room 1
             InputSimulator.Keyboard.KeyDown(VirtualKeyCode.RIGHT);
             Thread.Sleep((int)(42 * convert));
@@ -98,6 +92,21 @@ namespace CelesteAI.CelesteData
 
         }
 
+        public static void RunAllChapters()
+        {
+            RunPrologue();
+            RunChapter1();
+            RunChapter2();
+            RunChapter3();
+            RunChapter4();
+            RunChapter5();
+            RunChapter6();
+            RunChapter7();
+            RunEpilogue();
+            RunChapter8();
+            RunChapter9();
+        }
+
         public static void RunAI(Chapters Chapter)
         {
             Inputs.openCeleste();
@@ -137,10 +146,12 @@ namespace CelesteAI.CelesteData
                 case Chapters.Farewell:
                     RunChapter9();
                     break;
+                case Chapters.All:
+                    RunAllChapters();
+                    break;
                 default:
                     break;
             }
         }
-
     }
 }

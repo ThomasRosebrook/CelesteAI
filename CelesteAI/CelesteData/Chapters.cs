@@ -11,6 +11,7 @@ namespace CelesteAI.CelesteData
     /// </summary>
     public enum Chapters
     {
+        All,
         Prologue,
         ForsakenCity,
         OldSite,

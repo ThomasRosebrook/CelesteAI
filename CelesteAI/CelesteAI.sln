@@ -5,9 +5,7 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CelesteGUI", "CelesteGUI\CelesteGUI.csproj", "{6B1A16FF-BBED-4319-A496-87CAD1557FE9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CeletseAI", "WinFormsApp1\CeletseAI.csproj", "{557AB35A-3812-41A4-BAA7-CE66AC836344}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CelesteData", "CelesteData\CelesteData.csproj", "{EDF5C3AD-2B8D-4036-8798-88C5FACFB182}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CelesteData", "CelesteData\CelesteData.csproj", "{EDF5C3AD-2B8D-4036-8798-88C5FACFB182}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		{6B1A16FF-BBED-4319-A496-87CAD1557FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B1A16FF-BBED-4319-A496-87CAD1557FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B1A16FF-BBED-4319-A496-87CAD1557FE9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{557AB35A-3812-41A4-BAA7-CE66AC836344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{557AB35A-3812-41A4-BAA7-CE66AC836344}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{557AB35A-3812-41A4-BAA7-CE66AC836344}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{557AB35A-3812-41A4-BAA7-CE66AC836344}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EDF5C3AD-2B8D-4036-8798-88C5FACFB182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EDF5C3AD-2B8D-4036-8798-88C5FACFB182}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDF5C3AD-2B8D-4036-8798-88C5FACFB182}.Release|Any CPU.ActiveCfg = Release|Any CPU
