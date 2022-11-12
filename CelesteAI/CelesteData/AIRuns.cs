@@ -91,6 +91,7 @@ namespace CelesteAI.CelesteData
             Inputs.updown(VirtualKeyCode.DOWN);
             Thread.Sleep(50);
             Inputs.updown(VirtualKeyCode.VK_C);
+            Thread.Sleep(200);
 
             Thread.Sleep((int)(447 * convert));
             Inputs.holdKey(VirtualKeyCode.VK_C, (int)(6 * convert));
