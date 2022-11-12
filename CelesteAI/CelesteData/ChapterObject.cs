@@ -26,5 +26,21 @@ namespace CelesteAI.CelesteData
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(this.Chapter)));
             }
         }
+
+        Sides _side;
+
+        public Sides Side
+        {
+            get
+            {
+                return _side;
+            }
+
+            set
+            {
+                _side = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(this.Side)));
+            }
+        }
     }
 }

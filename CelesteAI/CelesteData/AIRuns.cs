@@ -29,8 +29,6 @@ namespace CelesteAI.CelesteData
             Inputs.updown(VirtualKeyCode.VK_C);
             Thread.Sleep(2500);
 
-            Inputs.ResetRoom();
-
             //Room 1
             InputSimulator.Keyboard.KeyDown(VirtualKeyCode.RIGHT);
             Thread.Sleep((int)(42 * convert));
@@ -43,6 +41,19 @@ namespace CelesteAI.CelesteData
             Inputs.holdKey(VirtualKeyCode.VK_C, (int)(32 * convert));
             Thread.Sleep((int)(65 * convert));
             InputSimulator.Keyboard.KeyUp(VirtualKeyCode.RIGHT);
+
+            //Room 2
+            Thread.Sleep(500);
+            Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(39 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(15 * convert));
+            Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(18 * convert));
+            Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_Z, (int)(12 * convert));
+            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(5 * convert));
+            Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_Z, (int)(11 * convert));
+            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(7 * convert));
+            Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_Z, (int)(8 * convert));
+            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(13 * convert));
+            Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(13 * convert));
         }
         //0 = A Side 
         //1 = B Side

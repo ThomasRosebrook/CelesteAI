@@ -28,6 +28,7 @@ namespace CelesteAI.CelesteGUI
             InitializeComponent();
 
             Chapter.Chapter = Chapters.Prologue;
+            Chapter.Side = Sides.A;
             this.DataContext = Chapter;
         }
 
