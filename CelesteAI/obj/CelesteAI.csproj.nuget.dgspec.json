@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lcmoe\\Source\\Repos\\CelesteAI\\CelesteAI\\CelesteAI.csproj": {}
+    "C:\\Users\\thoma\\Hackathom\\CelesteAI\\CelesteAI\\CelesteAI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lcmoe\\Source\\Repos\\CelesteAI\\CelesteAI\\CelesteAI.csproj": {
+    "C:\\Users\\thoma\\Hackathom\\CelesteAI\\CelesteAI\\CelesteAI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lcmoe\\Source\\Repos\\CelesteAI\\CelesteAI\\CelesteAI.csproj",
+        "projectUniqueName": "C:\\Users\\thoma\\Hackathom\\CelesteAI\\CelesteAI\\CelesteAI.csproj",
         "projectName": "CelesteAI",
-        "projectPath": "C:\\Users\\lcmoe\\Source\\Repos\\CelesteAI\\CelesteAI\\CelesteAI.csproj",
-        "packagesPath": "C:\\Users\\lcmoe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lcmoe\\Source\\Repos\\CelesteAI\\CelesteAI\\obj\\",
+        "projectPath": "C:\\Users\\thoma\\Hackathom\\CelesteAI\\CelesteAI\\CelesteAI.csproj",
+        "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thoma\\Hackathom\\CelesteAI\\CelesteAI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lcmoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
