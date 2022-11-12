@@ -13,6 +13,11 @@ namespace CelesteAI.CelesteData
     {
         static InputSimulator InputSimulator = new InputSimulator();
 
+        /// <summary>
+        /// Holds down a given key for a specified amount of time
+        /// </summary>
+        /// <param name="k">The key to press down</param>
+        /// <param name="i">The amount of time to press the key down for</param>
         public static void holdKey(VirtualKeyCode k, int i)
         {
             //VirtualKeyCode keyCode = VirtualKeyCode.VK_W;
@@ -21,6 +26,10 @@ namespace CelesteAI.CelesteData
             InputSimulator.Keyboard.KeyUp(k);
         }
 
+        /// <summary>
+        /// holdKey for menu movement
+        /// </summary>
+        /// <param name="k">The button to press on the keyboard</param>
         public static void updown(VirtualKeyCode k)
         {
             InputSimulator.Keyboard.KeyDown(k);
@@ -28,6 +37,12 @@ namespace CelesteAI.CelesteData
             InputSimulator.Keyboard.KeyUp(k);
         }
 
+        /// <summary>
+        /// Holds down two given keys for a specified amount of time
+        /// </summary>
+        /// <param name="k">The first key to press down</param>
+        /// <param name="k2">The second key to press down</param>
+        /// <param name="i">The amount of time to press the keys down for</param>
         public static void holdTwoKeys(VirtualKeyCode k, VirtualKeyCode k2, int i)
         {
             InputSimulator.Keyboard.KeyDown(k);
