@@ -143,6 +143,7 @@ namespace CelesteAI.CelesteData
                 case Sides.B:
                     break;
                 case Sides.C:
+                    //room 1
                     Thread.Sleep(500);
                     InputSimulator.Keyboard.KeyDown(VirtualKeyCode.RIGHT);
                     Thread.Sleep((int)(14 * convert));
@@ -159,14 +160,63 @@ namespace CelesteAI.CelesteData
                     Inputs.holdKey(VirtualKeyCode.VK_X, (int)(2 * convert));
                     Thread.Sleep((int)(45 * convert));
                     InputSimulator.Keyboard.KeyUp(VirtualKeyCode.RIGHT);
+                    Thread.Sleep(1000);
+
+                    //room 2
+                    InputSimulator.Keyboard.KeyDown(VirtualKeyCode.RIGHT);
+                    Thread.Sleep((int)(99 * convert));
+                    Inputs.holdTwoKeys(VirtualKeyCode.UP, VirtualKeyCode.VK_X, (int)(25 * convert));
+                    InputSimulator.Keyboard.KeyUp(VirtualKeyCode.RIGHT);
+                    Thread.Sleep((int)(34 * convert));
+                    InputSimulator.Keyboard.KeyDown(VirtualKeyCode.RIGHT);
+                    Inputs.holdTwoKeys(VirtualKeyCode.UP, VirtualKeyCode.VK_X, (int)(28 * convert));
+                    InputSimulator.Keyboard.KeyUp(VirtualKeyCode.RIGHT);
+                    Thread.Sleep((int)(34 * convert));
+                    InputSimulator.Keyboard.KeyDown(VirtualKeyCode.LEFT);
+                    Thread.Sleep((int)(4 * convert));
+                    Inputs.holdKey(VirtualKeyCode.VK_X, (int)(10 * convert));
+                    Thread.Sleep((int)(58 * convert));
+                    InputSimulator.Keyboard.KeyDown(VirtualKeyCode.UP);
+                    Thread.Sleep((int)(2 * convert));
+                    InputSimulator.Keyboard.KeyUp(VirtualKeyCode.LEFT);
+                    Inputs.holdKey(VirtualKeyCode.VK_X, (int)(8 * convert));
+                    Thread.Sleep((int)(16 * convert));
+                    InputSimulator.Keyboard.KeyDown(VirtualKeyCode.LEFT);
+                    Thread.Sleep((int)(3 * convert));
+                    InputSimulator.Keyboard.KeyUp(VirtualKeyCode.UP);
+                    Thread.Sleep((int)(25 * convert));
+                    InputSimulator.Keyboard.KeyUp(VirtualKeyCode.LEFT);
+                    Thread.Sleep((int)(13 * convert));
+                    InputSimulator.Keyboard.KeyDown(VirtualKeyCode.RIGHT);
+                    Thread.Sleep((int)(4 * convert));
+                    InputSimulator.Keyboard.KeyDown(VirtualKeyCode.VK_Z);
+                    Thread.Sleep((int)(13 * convert));
+                    InputSimulator.Keyboard.KeyUp(VirtualKeyCode.RIGHT);
+                    Thread.Sleep((int)(2 * convert));
+                    InputSimulator.Keyboard.KeyDown(VirtualKeyCode.LEFT);
+                    Inputs.holdKey(VirtualKeyCode.VK_C, (int)(21 * convert));
+                    Thread.Sleep((int)(26 * convert));
+                    InputSimulator.Keyboard.KeyUp(VirtualKeyCode.VK_Z);
+                    InputSimulator.Keyboard.KeyUp(VirtualKeyCode.LEFT);
+                    InputSimulator.Keyboard.KeyDown(VirtualKeyCode.RIGHT);
+                    Thread.Sleep((int)(22 * convert));
+                    Inputs.holdKey(VirtualKeyCode.VK_X, (int)(14 * convert));
+                    Thread.Sleep((int)(17 * convert));
+                    Inputs.holdKey(VirtualKeyCode.VK_X, (int)(11 * convert));
+                    Thread.Sleep((int)(143 * convert));
+                    InputSimulator.Keyboard.KeyUp(VirtualKeyCode.RIGHT);
+
+                    //room 3
+
+
                     break;
-            }
 
             }
-            public static void RunChapter3(Sides s)
+        }
+        public static void RunChapter3(Sides s)
         {
 
-            }
+            
         }
 
         public static void RunChapter4(Sides s)
