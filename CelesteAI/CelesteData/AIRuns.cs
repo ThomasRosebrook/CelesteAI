@@ -17,32 +17,36 @@ namespace CelesteAI.CelesteData
 
         public static void RunPrologue()
         {
+            //Start and Skip Cutscene
             Thread.Sleep(1000);
             Inputs.updown(VirtualKeyCode.VK_C);
-            Thread.Sleep(4000);
+            Thread.Sleep(2500);
             Inputs.updown(VirtualKeyCode.RETURN);
             Thread.Sleep(50);
             Inputs.updown(VirtualKeyCode.DOWN);
             Thread.Sleep(50);
             Inputs.updown(VirtualKeyCode.VK_C);
-            Thread.Sleep(2000);
+            Thread.Sleep(2500);
+            /*
+            //Reset Room
             Inputs.updown(VirtualKeyCode.RETURN);
             Thread.Sleep(50);
             Inputs.updown(VirtualKeyCode.DOWN);
             Thread.Sleep(50);
             Inputs.updown(VirtualKeyCode.VK_C);
-            Thread.Sleep(2000);
-
+            Thread.Sleep(2500);
+            */
+            //Room 1
             InputSimulator.Keyboard.KeyDown(VirtualKeyCode.RIGHT);
-            Thread.Sleep((int)(32 * convert));
-            Inputs.holdKey(VirtualKeyCode.VK_C, (int)(35 * convert));
-            Thread.Sleep((int)(23 * convert));
-            Inputs.holdKey(VirtualKeyCode.VK_C, (int)(36 * convert));
-            Thread.Sleep((int)(7 * convert));
-            Inputs.holdKey(VirtualKeyCode.VK_C, (int)(30 * convert));
-            Thread.Sleep((int)(32 * convert));
-            Inputs.holdKey(VirtualKeyCode.VK_C, (int)(22 * convert));
-            Thread.Sleep((int)(74 * convert));
+            Thread.Sleep((int)(42 * convert));
+            Inputs.holdKey(VirtualKeyCode.VK_C, (int)(14 * convert));
+            Thread.Sleep((int)(31 * convert));
+            Inputs.holdKey(VirtualKeyCode.VK_C, (int)(23 * convert));
+            Thread.Sleep((int)(30 * convert));
+            Inputs.holdKey(VirtualKeyCode.VK_C, (int)(7 * convert));
+            Thread.Sleep((int)(48 * convert));
+            Inputs.holdKey(VirtualKeyCode.VK_C, (int)(32 * convert));
+            Thread.Sleep((int)(65 * convert));
             InputSimulator.Keyboard.KeyUp(VirtualKeyCode.RIGHT);
         }
         public static void RunChapter1()
