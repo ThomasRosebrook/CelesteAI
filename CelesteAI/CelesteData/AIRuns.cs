@@ -43,16 +43,28 @@ namespace CelesteAI.CelesteData
 
             //Room 2
             Thread.Sleep(500);
+            InputSimulator.Keyboard.KeyDown(VirtualKeyCode.UP);
             Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(39 * convert));
             Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(15 * convert));
             Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(18 * convert));
-            Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_Z, (int)(12 * convert));
-            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(5 * convert));
-            Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_Z, (int)(11 * convert));
-            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(7 * convert));
-            Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_Z, (int)(8 * convert));
-            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(13 * convert));
+            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, VirtualKeyCode.VK_Z, (int)(12 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_Z, (int)(5 * convert));
+            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, VirtualKeyCode.VK_Z, (int)(11 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_Z, (int)(7 * convert));
+            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, VirtualKeyCode.VK_Z, (int)(8 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_Z, (int)(13 * convert));
             Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(13 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(6 * convert));
+            Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(29 * convert));
+            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, VirtualKeyCode.VK_Z, (int)(19 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_Z, (int)(5 * convert));
+            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, VirtualKeyCode.VK_Z, (int)(10 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_Z, (int)(4 * convert));
+            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, VirtualKeyCode.VK_Z, (int)(7 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_Z, (int)(5 * convert));
+            Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(35 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(4 * convert));
+            InputSimulator.Keyboard.KeyUp(VirtualKeyCode.UP);
         }
         public static void RunChapter1()
         {
