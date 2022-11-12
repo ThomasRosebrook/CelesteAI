@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using WindowsInput;
 using WindowsInput.Native;
 using System.Runtime.InteropServices;
+using System.ComponentModel;
 
 namespace CelesteAI.CelesteData
 {
@@ -43,36 +44,38 @@ namespace CelesteAI.CelesteData
             Thread.Sleep((int)(65 * convert));
             InputSimulator.Keyboard.KeyUp(VirtualKeyCode.RIGHT);
         }
-        public static void RunChapter1()
+        //0 = A Side 
+        //1 = B Side
+        //2 = C Side
+        public static void RunChapter1(Sides s)
+        {
+        }
+
+        public static void RunChapter2(Sides s)
+        {
+
+        }
+        public static void RunChapter3(Sides s)
         {
 
         }
 
-        public static void RunChapter2()
-        {
-
-        }
-        public static void RunChapter3()
+        public static void RunChapter4(Sides s)
         {
 
         }
 
-        public static void RunChapter4()
+        public static void RunChapter5(Sides s)
         {
 
         }
 
-        public static void RunChapter5()
+        public static void RunChapter6(Sides s)
         {
 
         }
 
-        public static void RunChapter6()
-        {
-
-        }
-
-        public static void RunChapter7()
+        public static void RunChapter7(Sides s)
         {
 
         }
@@ -82,12 +85,12 @@ namespace CelesteAI.CelesteData
 
         }
 
-        public static void RunChapter8()
+        public static void RunChapter8(Sides s)
         {
 
         }
 
-        public static void RunChapter9()
+        public static void RunChapter9(Sides s)
         {
 
         }
@@ -95,18 +98,53 @@ namespace CelesteAI.CelesteData
         public static void RunAllChapters()
         {
             RunPrologue();
-            RunChapter1();
-            RunChapter2();
-            RunChapter3();
-            RunChapter4();
-            RunChapter5();
-            RunChapter6();
-            RunChapter7();
-            RunEpilogue();
-            RunChapter8();
-            RunChapter9();
+            RunChapter1(Sides.A);
+            RunChapter2(Sides.A);
+            RunChapter3(Sides.A);
+            RunChapter4(Sides.A);
+            RunChapter5(Sides.A);
+            RunChapter6(Sides.A);
+            RunChapter7(Sides.A);
         }
-
+        public static void runOneLevel(Chapters Chapter, Sides side)
+        {
+            Inputs.openCeleste();
+            switch (Chapter)
+            {
+                case Chapters.Prologue:
+                    RunPrologue();
+                    break;
+                case Chapters.ForsakenCity:
+                    RunChapter1(side);
+                    break;
+                case Chapters.OldSite:
+                    RunChapter2(side);
+                    break;
+                case Chapters.CelestialResort:
+                    RunChapter3(side);
+                    break;
+                case Chapters.GoldenRidge:
+                    RunChapter4(side);
+                    break;
+                case Chapters.MirrorTemple:
+                    RunChapter5(side);
+                    break;
+                case Chapters.Reflection:
+                    RunChapter6(side);
+                    break;
+                case Chapters.TheSummit:
+                    RunChapter7(side);
+                    break;
+                case Chapters.Epilogue:
+                    RunEpilogue();
+                    break;
+                case Chapters.All:
+                    RunAllChapters();
+                    break;
+                default:
+                    break;
+            }
+        }
         public static void RunAI(Chapters Chapter)
         {
             Inputs.openCeleste();
@@ -139,12 +177,6 @@ namespace CelesteAI.CelesteData
                     break;
                 case Chapters.Epilogue:
                     RunEpilogue();
-                    break;
-                case Chapters.Core:
-                    RunChapter8();
-                    break;
-                case Chapters.Farewell:
-                    RunChapter9();
                     break;
                 case Chapters.All:
                     RunAllChapters();
