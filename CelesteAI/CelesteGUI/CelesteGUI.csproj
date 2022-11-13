@@ -6,10 +6,16 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
 	<RootNamespace>CelesteAI.CelesteGUI</RootNamespace>
+	<ApplicationIcon>AIElineLogoBG (1).ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="AIElineLogoNoBG.png" />
     <None Remove="Celeste_video_game_logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="AIElineLogoBG (1).ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="AIElineLogoNoBG.png" />
     <Resource Include="Celeste_video_game_logo.png" />
   </ItemGroup>
 
