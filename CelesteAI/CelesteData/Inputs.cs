@@ -104,6 +104,52 @@ namespace CelesteAI.CelesteData
             Thread.Sleep(2000);
         }
 
+        /// <summary>
+        /// Moves to a given side and chapter in the menu and selects it
+        /// </summary>
+        /// <param name="chapterNum">The number of the chapter (Prologue = 0)</param>
+        /// <param name="sideNum">The number of the side (A = 0, B = 1, C = 2)</param>
+        public static void LevelSelect(int chapterNum, int sideNum)
+        {
+            for (int i = 0; i < 11; i++)
+            {
+                updown(VirtualKeyCode.LEFT);
+                Thread.Sleep(250);
+            }
+
+            for (int i = 0; i < chapterNum; i++)
+            {
+                updown(VirtualKeyCode.RIGHT);
+                Thread.Sleep(250);
+            }
+
+            Thread.Sleep(500);
+            updown(VirtualKeyCode.VK_C);
+            Thread.Sleep(750);
+
+            for (int i = 0; i < sideNum; i++)
+            {
+                updown(VirtualKeyCode.RIGHT);
+                Thread.Sleep(30);
+            }
+
+            Thread.Sleep(250);
+            updown(VirtualKeyCode.VK_C);
+            Thread.Sleep(750);
+            updown(VirtualKeyCode.VK_C);
+            Thread.Sleep(2500);
+            if (chapterNum == 0)
+            {
+                Inputs.updown(VirtualKeyCode.RETURN);
+                Thread.Sleep(50);
+                Inputs.updown(VirtualKeyCode.DOWN);
+                Thread.Sleep(50);
+                Inputs.updown(VirtualKeyCode.VK_C);
+                Thread.Sleep(2500);
+            }
+            
+        }
+
         [DllImport("user32.dll")]
         public static extern bool SetForegroundWindow(IntPtr hWnd);
 
