@@ -450,80 +450,7 @@ namespace CelesteAI.CelesteData
             switch (s)
             {
                 case Sides.A:
-                    //Room 11
-                    /*
-                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(2 * convert));
-                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(14 * convert));
-                    Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_X, (int)(10 * convert));
-                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(35 * convert));
-                    Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_X, (int)(21 * convert));
-                    Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(24 * convert));
-                    Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_Z, (int)(9 * convert));
-                    Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(6 * convert));
-                    Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_Z, (int)(6 * convert));
-                    Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(6 * convert));
-                    Inputs.holdThreeKeys(VirtualKeyCode.LEFT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, (int)(14 * convert));
-                    Inputs.holdKey(VirtualKeyCode.LEFT, (int)(12 * convert));
-                    Thread.Sleep((int)(7 * convert));
-                    Inputs.holdTwoKeys(VirtualKeyCode.UP, VirtualKeyCode.VK_C, (int)(13 * convert));
-                    Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_X, (int)(9 * convert));
-                    Thread.Sleep((int)(5 * convert));
-                    Inputs.holdThreeKeys(VirtualKeyCode.UP, VirtualKeyCode.RIGHT, VirtualKeyCode.VK_Z, (int)(7 * convert));
-                    Inputs.holdThreeKeys(VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_Z, (int)(18 * convert));
                     
-                    //Room 12
-                    Thread.Sleep(1150);
-                    Inputs.holdKey(VirtualKeyCode.VK_C, (int)(5 * convert));
-                    Thread.Sleep((int)(12 * convert));
-                    Inputs.holdThreeKeys(VirtualKeyCode.DOWN, VirtualKeyCode.RIGHT, VirtualKeyCode.VK_X, (int)(11 * convert));
-                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(27 * convert));
-                    Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_X, (int)(16 * convert));
-                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(17 * convert));
-                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(14 * convert));
-                    Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_X, (int)(13 * convert));
-                    Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(12 * convert));
-                    Inputs.holdThreeKeys(VirtualKeyCode.UP, VirtualKeyCode.VK_Z, VirtualKeyCode.VK_C, (int)(6 * convert));
-                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(36 * convert))
-
-                    //Room 13
-                    Thread.Sleep(500);
-                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(45 * convert));
-                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_X, (int)(9 * convert));
-                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(33 * convert));
-                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_X, (int)(8 * convert));
-                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(34 * convert));
-                    Thread.Sleep((int)(7 * convert));
-                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(4 * convert));
-                    Thread.Sleep((int)(10 * convert));
-                    Inputs.holdKey(VirtualKeyCode.VK_C, (int)(6 * convert));
-                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(4 * convert));
-                    Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, (int)(8 * convert));
-                    Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_X, (int)(9 * convert));
-                    Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, (int)(4 * convert));
-                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, (int)(8 * convert));
-                    */
-                    //Room 14
-                    Inputs.holdKey(VirtualKeyCode.LEFT, (int)(5 * convert));
-                    Inputs.holdTwoKeys(VirtualKeyCode.LEFT, VirtualKeyCode.VK_C, (int)(10 * convert));
-                    Inputs.holdKey(VirtualKeyCode.LEFT, (int)(4 * convert));
-                    Inputs.holdTwoKeys(VirtualKeyCode.LEFT, VirtualKeyCode.VK_C, (int)(8 * convert));
-                    Inputs.holdKey(VirtualKeyCode.VK_C, (int)(2 *convert));
-                    Thread.Sleep((int)(3 * convert));
-                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.DOWN, (int)(2 * convert));
-                    Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.DOWN, VirtualKeyCode.VK_X, (int)(6 * convert));
-                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.DOWN, (int)(5 * convert));
-                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(25 * convert));
-                    Inputs.holdTwoKeys(VirtualKeyCode.UP, VirtualKeyCode.VK_X, (int)(19 * convert));
-                    Inputs.holdThreeKeys(VirtualKeyCode.UP, VirtualKeyCode.RIGHT, VirtualKeyCode.VK_Z, (int)(28 * convert));
-                    Inputs.holdFourKeys(VirtualKeyCode.UP, VirtualKeyCode.RIGHT, VirtualKeyCode.VK_Z, VirtualKeyCode.VK_C, (int)(11 * convert));
-                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(10 * convert));
-                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_X, (int)(8 * convert));
-                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(9 * convert));
-                    Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.DOWN, VirtualKeyCode.VK_X, (int)(3 * convert));
-                    Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.DOWN, VirtualKeyCode.VK_X, VirtualKeyCode.VK_C, (int)(11 * convert));
-                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(6 * convert));
-
-
                     break;
                 case Sides.B:
                     break;
@@ -538,6 +465,25 @@ namespace CelesteAI.CelesteData
             switch (s)
             {
                 case Sides.A:
+                    //Room 7
+                    Thread.Sleep(1250);
+                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(3 * convert));
+                    Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, (int)(15 * convert));
+                    Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_X, (int)(14 * convert));
+                    Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(21 * convert));
+                    Inputs.holdFourKeys(VirtualKeyCode.LEFT, VirtualKeyCode.UP, VirtualKeyCode.VK_Z, VirtualKeyCode.VK_C, (int)(17 * convert));
+                    Inputs.holdKey(VirtualKeyCode.LEFT, (int)(6 * convert));
+                    Thread.Sleep((int)(5 * convert));
+                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(7 * convert));
+                    Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, (int)(21 * convert));
+                    Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_X, (int)(19 * convert));
+                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(20 * convert));
+                    Thread.Sleep((int)(10 * convert));
+                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(21 * convert));
+                    Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_X, (int)(19 * convert));
+                    Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(15 * convert));
+                    Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(17 * convert));
+                    Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, VirtualKeyCode.VK_X, (int)(10 * convert));
                     break;
                 case Sides.B:
                     break;
@@ -636,7 +582,7 @@ namespace CelesteAI.CelesteData
                     RunChapter4(side);
                     break;
                 case Chapters.MirrorTemple:
-                    Inputs.LevelSelect(5, (int)side);
+                    //Inputs.LevelSelect(5, (int)side);
                     RunChapter5(side);
                     break;
                 case Chapters.Reflection:
