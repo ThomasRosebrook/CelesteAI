@@ -925,7 +925,6 @@ namespace CelesteAI.CelesteData
             {
                 case Sides.A:
                   break;
-                    break;
                 case Sides.B:
                     break;
                 case Sides.C:
@@ -1021,11 +1020,11 @@ namespace CelesteAI.CelesteData
                     RunPrologue();
                     break;
                 case Chapters.ForsakenCity:
-                    //Inputs.LevelSelect(1, (int)side);
+                    Inputs.LevelSelect(1, (int)side);
                     RunChapter1(side);
                     break;
                 case Chapters.OldSite:
-                    //Inputs.LevelSelect(2, (int)side);
+                    Inputs.LevelSelect(2, (int)side);
                     RunChapter2(side);
                     break;
                 case Chapters.CelestialResort:
