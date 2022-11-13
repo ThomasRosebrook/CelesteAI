@@ -112,6 +112,7 @@ namespace CelesteAI.CelesteData
             switch (s)
             {
                 case Sides.A:
+                    //Checkpoint 1
                     //Room 1
                     Thread.Sleep(500);
                     Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(15 * convert));
@@ -219,6 +220,7 @@ namespace CelesteAI.CelesteData
                     Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(14 * convert));
                     Inputs.holdTwoKeys(VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(45 * convert));
 
+                    //2nd Checkpoint
                     //Room 7
                     Thread.Sleep(1250);
                     Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(2 * convert));
@@ -294,9 +296,9 @@ namespace CelesteAI.CelesteData
                     Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, VirtualKeyCode.VK_X, (int)(11 * convert));
                     Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(3 * convert));
                     Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(13 * convert));
-                    Thread.Sleep(5);
+                    Thread.Sleep((int)(5 * convert));
                     Inputs.holdKey(VirtualKeyCode.LEFT, (int)(15 * convert));
-                    Thread.Sleep(29);
+                    Thread.Sleep((int)(29 * convert));
                     Inputs.holdKey(VirtualKeyCode.VK_C, (int)(11 * convert));
                     Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(8 * convert));
                     Inputs.holdThreeKeys(VirtualKeyCode.UP, VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(11 * convert));
@@ -411,6 +413,7 @@ namespace CelesteAI.CelesteData
                     Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.DOWN, VirtualKeyCode.VK_X, VirtualKeyCode.VK_C, (int)(11 * convert));
                     Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(6 * convert));
 
+                    //Checkpoint 3
 
                     break;
                 case Sides.B:
