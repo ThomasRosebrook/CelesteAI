@@ -262,8 +262,23 @@ namespace CelesteAI.CelesteData
         }
         public static void RunChapter3(Sides s)
         {
+            Thread.Sleep(1000);
+            Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(11 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(16 * convert));
+            Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(18 * convert));
+            Thread.Sleep((int)(29 * convert));
+            Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(5 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(26 * convert));
+            Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(29 * convert));
+            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, VirtualKeyCode.VK_X, (int)(26 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(3 * convert));
+            Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(9 * convert));
+            Inputs.holdKey(VirtualKeyCode.UP, (int)(7 * convert));
+            Inputs.holdKey(VirtualKeyCode.LEFT, (int)(5 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.UP, VirtualKeyCode.VK_X, (int)(8 * convert));
+            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(14 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(45 * convert));
 
-            
         }
 
         public static void RunChapter4(Sides s)
@@ -363,39 +378,51 @@ namespace CelesteAI.CelesteData
             switch (Chapter)
             {
                 case Chapters.Prologue:
+                    //Inputs.LevelSelect(0, 0);
                     RunPrologue();
                     break;
                 case Chapters.ForsakenCity:
+                    //Inputs.LevelSelect(1, (int)side);
                     RunChapter1(side);
                     break;
                 case Chapters.OldSite:
+                    //Inputs.LevelSelect(2, (int)side);
                     RunChapter2(side);
                     break;
                 case Chapters.CelestialResort:
+                    Inputs.LevelSelect(3, (int)side);
                     RunChapter3(side);
                     break;
                 case Chapters.GoldenRidge:
+                    Inputs.LevelSelect(4, (int)side);
                     RunChapter4(side);
                     break;
                 case Chapters.MirrorTemple:
+                    Inputs.LevelSelect(5, (int)side);
                     RunChapter5(side);
                     break;
                 case Chapters.Reflection:
+                    Inputs.LevelSelect(6, (int)side);
                     RunChapter6(side);
                     break;
                 case Chapters.TheSummit:
+                    Inputs.LevelSelect(7, (int)side);
                     RunChapter7(side);
                     break;
                 case Chapters.Epilogue:
+                    Inputs.LevelSelect(8, (int)side);
                     RunEpilogue();
                     break;
                 case Chapters.All:
+                    Inputs.LevelSelect(9, (int)side);
                     RunAllChapters();
                     break;
                 case Chapters.Core:
+                    Inputs.LevelSelect(10, (int)side);
                     RunChapter8(side);
                     break;
                 case Chapters.Farewell:
+                    Inputs.LevelSelect(11, (int)side);
                     RunChapter9();
                     break;
                 default:
