@@ -634,6 +634,7 @@ namespace CelesteAI.CelesteData
                 case Sides.B:
                     break;
                 case Sides.C:
+                    /*
                     //room 1
                     Thread.Sleep(500);
                     InputSimulator.Keyboard.KeyDown(VirtualKeyCode.RIGHT);
@@ -898,6 +899,7 @@ namespace CelesteAI.CelesteData
                         Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(2 * convert));
                         Thread.Sleep((int)(2 * convert));
                     }
+                    */
                         break;
 
 
