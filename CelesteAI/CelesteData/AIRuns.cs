@@ -173,7 +173,7 @@ namespace CelesteAI.CelesteData
                     Inputs.holdTwoKeys(VirtualKeyCode.UP, VirtualKeyCode.VK_X, (int)(8 * convert));
                     
                     //Room 4
-                    Thread.Sleep(500);
+                    Thread.Sleep(1000);
                     Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(22 * convert));
                     Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, (int)(8 * convert));
                     Thread.Sleep((int)(5 * convert));
@@ -188,7 +188,7 @@ namespace CelesteAI.CelesteData
                     Inputs.holdTwoKeys(VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(30 * convert));
 
                     //Room 5
-                    Thread.Sleep(500);
+                    Thread.Sleep(1000);
                     Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(21 * convert));
                     Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(29 * convert));
                     Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(9 * convert));
@@ -202,7 +202,7 @@ namespace CelesteAI.CelesteData
                     Inputs.holdFourKeys(VirtualKeyCode.UP, VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, VirtualKeyCode.VK_X, (int)(15 * convert));
 
                     //Room 6
-                    Thread.Sleep(1000);
+                    Thread.Sleep(1250);
                     Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(11 * convert));
                     Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(16 * convert));
                     Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(18 * convert));
