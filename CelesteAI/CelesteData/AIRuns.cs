@@ -634,6 +634,7 @@ namespace CelesteAI.CelesteData
                 case Sides.B:
                     break;
                 case Sides.C:
+                    /*
                     //room 1
                     Thread.Sleep(500);
                     InputSimulator.Keyboard.KeyDown(VirtualKeyCode.RIGHT);
@@ -898,6 +899,7 @@ namespace CelesteAI.CelesteData
                         Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(2 * convert));
                         Thread.Sleep((int)(2 * convert));
                     }
+                    */
                         break;
 
 
@@ -925,7 +927,6 @@ namespace CelesteAI.CelesteData
             {
                 case Sides.A:
                   break;
-                    break;
                 case Sides.B:
                     break;
                 case Sides.C:
@@ -1021,11 +1022,11 @@ namespace CelesteAI.CelesteData
                     RunPrologue();
                     break;
                 case Chapters.ForsakenCity:
-                    //Inputs.LevelSelect(1, (int)side);
+                    Inputs.LevelSelect(1, (int)side);
                     RunChapter1(side);
                     break;
                 case Chapters.OldSite:
-                    //Inputs.LevelSelect(2, (int)side);
+                    Inputs.LevelSelect(2, (int)side);
                     RunChapter2(side);
                     break;
                 case Chapters.CelestialResort:
