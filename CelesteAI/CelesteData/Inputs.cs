@@ -111,7 +111,7 @@ namespace CelesteAI.CelesteData
         /// <param name="sideNum">The number of the side (A = 0, B = 1, C = 2)</param>
         public static void LevelSelect(int chapterNum, int sideNum)
         {
-            for (int i = 0; i < 11; i++)
+            for (int i = 0; i < 10; i++)
             {
                 updown(VirtualKeyCode.LEFT);
                 Thread.Sleep(250);

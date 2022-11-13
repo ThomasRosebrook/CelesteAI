@@ -310,7 +310,32 @@ namespace CelesteAI.CelesteData
         }
         public static void RunChapter3(Sides s)
         {
-
+            //Room 10
+            Thread.Sleep(500);
+            Inputs.holdKey(VirtualKeyCode.VK_C, (int)(9 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(12 * convert));
+            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, VirtualKeyCode.VK_X, (int)(12 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(2 * convert));
+            Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(17 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_X, (int)(9 * convert));
+            Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(4 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.DOWN, (int)(38 * convert));
+            Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(3 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, (int)(14 * convert));
+            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_X, (int)(18 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, (int)(2 * convert));
+            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(28 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, (int)(1 * convert));
+            Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(14 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(4 * convert));
+            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, (int)(3 * convert));
+            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, (int)(3 * convert));
+            Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_X, (int)(12 * convert));
+            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, (int)(3 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, (int)(7 * convert));
+            Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, (int)(16 * convert));
+            Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, (int)(4 * convert));
+            Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(5 * convert));
         }
 
         public static void RunChapter4(Sides s)
@@ -422,7 +447,7 @@ namespace CelesteAI.CelesteData
                     RunChapter2(side);
                     break;
                 case Chapters.CelestialResort:
-                    Inputs.LevelSelect(3, (int)side);
+                    //Inputs.LevelSelect(3, (int)side);
                     RunChapter3(side);
                     break;
                 case Chapters.GoldenRidge:
