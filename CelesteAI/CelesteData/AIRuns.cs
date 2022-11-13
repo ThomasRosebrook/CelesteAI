@@ -115,7 +115,6 @@ namespace CelesteAI.CelesteData
                     
                     //Checkpoint 1
                     //Room 1
-                    /*
                     Thread.Sleep(500);
                     Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(15 * convert));
                     Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, (int)(18 * convert));
@@ -221,7 +220,7 @@ namespace CelesteAI.CelesteData
                     Inputs.holdTwoKeys(VirtualKeyCode.UP, VirtualKeyCode.VK_X, (int)(8 * convert));
                     Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(14 * convert));
                     Inputs.holdTwoKeys(VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(45 * convert));
-                    */
+
                     //2nd Checkpoint
                     //Room 7
                     Thread.Sleep(1250);
@@ -294,7 +293,6 @@ namespace CelesteAI.CelesteData
                     Inputs.holdFourKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_C, VirtualKeyCode.VK_X, (int)(19 * convert));
                     Inputs.holdKey(VirtualKeyCode.RIGHT, (int)(32 * convert));
 
-                    /*
                     //Room 10
                     Thread.Sleep(500);
                     Inputs.holdKey(VirtualKeyCode.VK_C, (int)(9 * convert));
@@ -518,7 +516,6 @@ namespace CelesteAI.CelesteData
                     Inputs.holdTwoKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.VK_C, 11);
                     Inputs.holdThreeKeys(VirtualKeyCode.RIGHT, VirtualKeyCode.UP, VirtualKeyCode.VK_Z, (int)(9 * convert));
                     Inputs.holdThreeKeys(VirtualKeyCode.UP, VirtualKeyCode.VK_Z, VirtualKeyCode.VK_X, (int)(12 * convert));
-                    */
                     break;
                 case Sides.B:
                     break;
